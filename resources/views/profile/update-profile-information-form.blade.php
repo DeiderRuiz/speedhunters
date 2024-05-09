@@ -55,25 +55,25 @@
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">
             <x-label for="name" value="{{ __('Nombre') }}" />
-            <x-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="state.name" autocomplete="name" />
+            <x-input id="name" type="text" class="mt-1 block w-full text-black" wire:model.defer="state.name" autocomplete="name" />
             <x-input-error for="name" class="mt-2" />
         </div>
         <!-- Last Name -->
         <div class="col-span-6 sm:col-span-4">
             <x-label for="last_name" value="{{ __('Apellido') }}" />
-            <x-input id="last_name" type="text" class="mt-1 block w-full" wire:model.defer="state.last_name" autocomplete="last_name" />
+            <x-input id="last_name" type="text" class="mt-1 block w-full text-black" wire:model.defer="state.last_name" autocomplete="last_name" />
             <x-input-error for="last_name" class="mt-2" />
         </div>
         <!-- Cellphone -->
         <div class="col-span-6 sm:col-span-4">
             <x-label for="cellphone" value="{{ __('Telefono') }}" />
-            <x-input id="cellphone" type="text" class="mt-1 block w-full" wire:model.defer="state.cellphone" autocomplete="cellphone" />
+            <x-input id="cellphone" type="text" class="mt-1 block w-full text-black" wire:model.defer="state.cellphone" autocomplete="cellphone" />
             <x-input-error for="cellphone" class="mt-2" />
         </div>
         <!-- Email -->
         <div class="col-span-6 sm:col-span-4">
             <x-label for="email" value="{{ __('Email') }}" />
-            <x-input id="email" type="email" class="mt-1 block w-full" wire:model.defer="state.email" autocomplete="username" />
+            <x-input id="email" type="email" class="mt-1 block w-full text-black" wire:model.defer="state.email" autocomplete="username" />
             <x-input-error for="email" class="mt-2" />
 
             @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::emailVerification()) && ! $this->user->hasVerifiedEmail())
